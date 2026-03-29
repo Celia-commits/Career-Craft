@@ -78,7 +78,7 @@ if (submitBtn && contactForm) {
         const formData = new FormData(contactForm);
         
         try {
-            // 3. Send to Web3Forms
+            // sends data to formspree
             const response = await fetch(contactForm.action, {
                 method: 'POST',
                 body: formData,
