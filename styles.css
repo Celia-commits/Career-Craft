@@ -10,8 +10,18 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 0 auto;
-    padding: 0 20px 150px 120px;
-    padding-bottom: 100px;
+    padding: 90px 20px 120px 20px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+    body {
+    padding: 110px 120px 150px 120px;
+        max-width: 1400px;
+        margin: 0 auto;
+        
+    }
 }
 
 h1, h2, h3, h4 {
@@ -68,6 +78,7 @@ h2 {
     font-size: 0.95rem;
     font-weight: 400;
     transition: color 0.3s;
+    text-transform: uppercase;
 }
 
 .nav-links a:hover {
@@ -1012,4 +1023,12 @@ h2 {
     text-align: center;
     margin-top: 50px;
     
+}
+
+@media (max-width: 767px) {
+    .footer-menu {
+        gap: 10px;
+        /* Narrower gap so it doesn't take up too much height */
+        font-size: 0.9rem;
+    }
 }
