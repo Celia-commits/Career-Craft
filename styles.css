@@ -667,10 +667,14 @@ h2 {
     list-style: none;
     padding: 0;
     margin: 5px;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     list-style: none;
 
+}
+
+.footer-menu li {
+    margin: 5px 0;
 }
 
 .footer-menu li a {
