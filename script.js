@@ -63,7 +63,7 @@ steps.forEach(step => {
 });
 
 // This starts at the bottom of the file (formerly line 117)
-const contactForm = document.getElementById('form'); // Matches the ID we added to contact.html
+const contactForm = document.getElementById('form'); // Matches the  contact.html ID
 const submitBtn = document.getElementById('submit-btn');
 
 if (submitBtn && contactForm) {
