@@ -4,29 +4,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-const hamMenu = document.querySelector('.ham-menu');
-const offScreenMenu = document.querySelector('.offscreen-menu');
-const overlay = document.querySelector('.menu-overlay');
-const closeBtn = document.querySelector('.close-menu');   
-
-
-hamMenu.addEventListener('click', () => {
-        hamMenu.classList.toggle('active');
-        offScreenMenu.classList.toggle('active');
-        overlay.classList.toggle('active');
-    });
-
-overlay.addEventListener('click', () => {
-        hamMenu.classList.remove('active');
-        offScreenMenu.classList.remove('active');
-        overlay.classList.remove('active');
-    });
-
-closeBtn.addEventListener('click', () => {
-        hamMenu.classList.remove('active');
-        offScreenMenu.classList.remove('active');
-        overlay.classList.remove('active');
-    });
 
     
 
