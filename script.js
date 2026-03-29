@@ -62,47 +62,44 @@ steps.forEach(step => {
 });
 });
 
-const form = document.querySelector('.contact-form');
-const btn = document.getElementById('submit-btn');
+// This starts at the bottom of the file (formerly line 117)
+const contactForm = document.getElementById('form'); // Matches the ID we added to contact.html
+const submitBtn = document.getElementById('submit-btn');
 
+if (submitBtn && contactForm) {
+    submitBtn.addEventListener('click', async (e) => {
+        e.preventDefault(); 
+        
+        // 1. Visual Feedback
+        submitBtn.innerHTML = "Please wait...";
+        submitBtn.disabled = true;
 
-// Check if the button actually exists before adding the listener
-if (btn) {
-    btn.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default form submission
+        // 2. Prepare Data
+        const formData = new FormData(contactForm);
+        
+        try {
+            // 3. Send to Web3Forms
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
 
-        const form = document.getElementById('form');
-        const formData = new FormData(form);
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
-        // Indicate that the form is being sent
-        btn.innerHTML = "Please wait...";
-
-        fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                // Redirect to thank-you page on success
+            // 4. Handle Redirect
+            if (response.ok) {
+                // This is the specific fix for your redirect issue
                 window.location.href = "thank-you.html";
             } else {
-                console.log(response);
-                alert(json.message);
+                const errorData = await response.json();
+                alert(errorData.message || "Submission failed. Please try again.");
+                submitBtn.innerHTML = "Send Message";
+                submitBtn.disabled = false;
             }
-        })
-        .catch(error => {
-            console.log(error);
-            alert("Something went wrong!");
-        })
-        .then(function() {
-            form.reset();
-        });
+        } catch (error) {
+            console.error("Form Error:", error);
+            alert("Network error. Please check your connection and try again.");
+            submitBtn.innerHTML = "Send Message";
+            submitBtn.disabled = false;
+        }
     });
 }
