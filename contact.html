@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Contact Us | Career Craft</title>
+    <link rel="shortcut icon" href="images/favicon.ico.svg" type="image/x-icon">
+    <meta property="og:title" content="Get in Touch | Career Craft">
+    <meta property="og:description"
+        content="Ready to launch your career? Contact Career Craft today for a professional CV, Cover Letter, or LinkedIn revamp.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!--<meta property="og:url" content=""-->
+    <meta property="og:sitename" content="Career Craft">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="offscreen-menu">
+        <div class="close-menu" role="button" aria-label="Close menu">&times;</div>
+        <ul class="offscreen-links">
+            <li class="offscreen-item"><a href="index.html" class="offscreen-link" target="_blank"
+                    rel="noopener noreferrer">Home</a>
+            </li>
+            <li class="offscreen-item"><a href="about.html" class="offscreen-link" target="_blank"
+                    rel="noopener noreferrer">About</a></li>
+            <li class="offscreen-item"><a href="pricing.html" class="offscreen-link" target="_blank"
+                    rel="noopener noreferrer">Services and Pricing</a></li>
+            <li class="offscreen-item"><a href="faq.html" class="offscreen-link" target="_blank"
+                    rel="noopener noreferrer">FAQ</a></li>
+            <li class="offscreen-item"><a href="#" class="offscreen-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <nav class="top-nav">
+        <div class="ham-menu" role="button" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="menu-overlay"></div>
+    <header id="main-title">
+        <h1>Career Craft</h1>
+    </header>
+
+
+    <section class="contact-hero">
+        <h2>Let's Build Your Future</h2>
+        <p>Fill out the form below, and we'll get back to you within 24 hours to discuss your career goals.</p>
+    </section>
+
+    <form name="contact" action="https://formspree.io/f/xqegppnv" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="package">Interested Services</label>
+            <select name="package" id="package">
+                <option value="pivot">The Career Pivot</option>
+                <option value="pro">The Full Revamp</option>
+                <option value="other">Other / Not Sure Yet</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="situation">Current Situation</label>
+            <select name="situation" id="situation">
+                <option value="changer">Career Changer</option>
+                <option value="unemployed">Currently Job Hunting</option>
+                <option value="professional">Professional Looking for a Move</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">How can we help?</label>
+            <textarea name="message" id="message" rows="5"
+                placeholder="Tell us about the industry/job you're pursuing..."></textarea>
+        </div>
+        <button type="button" class="submit-btn" id="submit-btn">Send Message</button>
+    </form>
+    <section class="policy-snippet"
+        style="max-width: 600px; margin: 40px auto; padding: 20px; font-size: 0.85rem; color: #7a6a5f; line-height: 1.6; border-top: 1px solid #ede7d5;">
+        <p><strong>Note:</strong> By booking a service, you agree to our 2-round revision policy. Due to the digital
+            nature
+            of our work, refunds are not issued once drafting has commenced. Your data is handled with 100%
+            confidentiality.
+        </p>
+    </section>
+
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul class="footer-menu">
+                <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a href="faq.html" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+                <li><a href="pricing.html" target="_blank" rel="noopener noreferrer">Services</a></li>
+                <li><a href="#" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Career Craft. Strategic CV Branding in South Africa.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
