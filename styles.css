@@ -10,17 +10,16 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 0 auto;
-    padding: 50px 20px 150px 20px;
+    padding: 60px 15px 100px 15px;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
     body {
     padding: 110px 120px 150px 120px;
         max-width: 1400px;
         margin: 0 auto;
-        
     }
 }
 
@@ -41,7 +40,7 @@ h2 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 5px 0;
     border-bottom: 1px solid rgba(61, 43, 31, 0.1);
 }
 
@@ -97,17 +96,25 @@ h2 {
 .nav-cta:hover {
     background-color: #5a4a3f;
 }
-
-/* Mobile Adjustments */
+ /*Mobile adjustments */
 @media (max-width: 768px) {
-    .nav-links {
-        gap: 15px;
-    }
-
-    .nav-links a {
-        font-size: 0.85rem;
+    .nav-container {
+    flex-direction: column;
+    gap: 10px;
     }
 }
+
+.nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.nav-links a {
+        font-size: 0.75rem;
+    }
+
 
 
 
