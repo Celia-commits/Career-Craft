@@ -116,7 +116,30 @@ h2 {
     }
 
 
+@media (max-width: 400px) {
+    #main-title {
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
 
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .submit-btn {
+        padding: 12px 20px;
+        /* Smaller buttons */
+        width: 100%;
+        /* Make buttons full-width for easier tapping */
+        box-sizing: border-box;
+    }
+}
 
 /******************************The website name******************************************/
 #main-title {
@@ -269,6 +292,13 @@ h2 {
     background-color: #8C6E5E;
 }
 
+@media (max-width: 768px) {
+    .pricing-card.featured {
+        transform: scale(1);
+        /* Disable scale on mobile to prevent overflow */
+        margin: 20px 0;
+    }
+}
 
 .how-it-works {
     padding: 60px 20px;
@@ -658,6 +688,12 @@ h2 {
     z-index: 2000;
     padding: 40px 20px;
     transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 20px 15px;
+    }
 }
 
 .site-footer p {
