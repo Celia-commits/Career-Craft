@@ -1070,7 +1070,6 @@ h2 {
 @media (max-width: 768px) {
     .footer-menu {
         gap: 10px;
-        /* Narrower gap so it doesn't take up too much height */
         font-size: 0.8rem;
     }
 }
