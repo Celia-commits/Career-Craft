@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 120px;
 }
 
 
@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 0 auto;
-    padding: 60px 15px 100px 15px;
+    padding: 100px 15px 100px 15px;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -50,16 +50,29 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 /* Logo Styling */
 .nav-logo {
-    height: 55px;
+    height: 80px;
     width: auto;
     display: block;
+    transition: height 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 65px;
+        /* Slightly smaller but still much larger than before */
+    }
+.nav-container {
+    padding: 10px 15px;
+    flex-direction: column;
+    /* Keeps your current stacked layout for mobile */
+    gap: 12px;
+}
+}
 
 /* Menu Link Styling */
 .nav-links {
@@ -95,13 +108,7 @@ h2 {
 .nav-cta:hover {
     background-color: #5a4a3f;
 }
- /*Mobile adjustments */
-@media (max-width: 768px) {
-    .nav-container {
-    flex-direction: column;
-    gap: 10px;
-    }
-}
+
 
 .nav-links {
     gap: 10px;
