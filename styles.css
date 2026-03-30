@@ -49,18 +49,17 @@ h2 {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* Logo left, Links right */
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 /* Logo Styling */
 .nav-logo {
     height: 55px;
-    /* Adjust based on your logo shape */
     width: auto;
     display: block;
 }
+
 
 /* Menu Link Styling */
 .nav-links {
@@ -118,7 +117,7 @@ h2 {
 
 @media (max-width: 400px) {
     #main-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 20px 0;
     }
 
@@ -692,7 +691,7 @@ h2 {
 
 @media (max-width: 768px) {
     .site-footer {
-        padding: 20px 15px;
+        padding: 15px 15px;
     }
 }
 
@@ -1068,10 +1067,10 @@ h2 {
     
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .footer-menu {
         gap: 10px;
         /* Narrower gap so it doesn't take up too much height */
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
