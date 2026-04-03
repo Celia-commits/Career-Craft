@@ -15,7 +15,6 @@
     <meta property="og:image" content="images/social-preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <!--<meta property="og:url" content=""-->
     <meta property="og:sitename" content="Career Craft">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,53 +42,24 @@
         <h1>Contact Us</h1>
     </header>
 
-
     <section class="contact-hero">
         <h2>Let's Build Your Future</h2>
-        <p>Fill out the form below, and we'll get back to you within 24 hours to discuss your career goals.</p>
+        <p>Fill out the questionnaire below to get started. We'll get back to you within 24 hours.</p>
     </section>
 
-    <form id="form" class="contact-form" action="https://formspree.io/f/xqegpqlw" method="POST">
-        <input type="hidden" value="https://career-craft-ruby-six.vercel.app/thank-you.html">
-        <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required>
-        </div>
+    <section class="contact-form-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <iframe
+            data-tally-src="https://tally.so/embed/YOUR_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"
+            title="Career Craft Questionnaire">
+        </iframe>
+        <script>var d = window, e = document, f = function () { var a = e.getElementsByTagName("script"), b = a[a.length - 1]; b.parentNode.insertBefore(e.createElement("script"), b) }; "complete" === e.readyState ? f() : d.attachEvent ? d.attachEvent("onload", f) : d.addEventListener("load", f, !1);</script>
+    </section>
 
-        <div class="form-group">
-            <label for="package">Interested Services</label>
-            <select name="package" id="package">
-                <option value="pivot">The Career Pivot</option>
-                <option value="pro">The Full Revamp</option>
-                <option value="other">Other / Not Sure Yet</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="situation">Current Situation</label>
-            <select name="situation" id="situation">
-                <option value="changer">Career Changer</option>
-                <option value="unemployed">Currently Job Hunting</option>
-                <option value="professional">Professional Looking for a Move</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="message">How can we help?</label>
-            <textarea name="message" id="message" rows="5"
-                placeholder="Anything specific you'd like to chat about during our consultation?"></textarea>
-        </div>
-        <button type="button" class="submit-btn" id="submit-btn">Send Message</button>
-    </form>
     <section class="policy-snippet"
         style="max-width: 600px; margin: 40px auto; padding: 20px; font-size: 0.85rem; color: #7a6a5f; line-height: 1.6; border-top: 1px solid #ede7d5;">
         <p><strong>Note:</strong> By booking a service, you agree to our 2-round revision policy. Due to the digital
-            nature
-            of our work, refunds are not issued once drafting has commenced. Your data is handled with 100%
+            nature of our work, refunds are not issued once drafting has commenced. Your data is handled with 100%
             confidentiality.
         </p>
     </section>
