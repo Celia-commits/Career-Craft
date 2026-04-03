@@ -1080,3 +1080,12 @@ h2 {
         font-size: 0.8rem;
     }
 }
+
+.contact-form-container {
+    min-height: 600px;
+    /* Ensures space is reserved for the form */
+    margin-top: 20px;
+    background: #fff;
+    /* Optional: makes the form area pop against the page background */
+    border-radius: 15px;
+}
