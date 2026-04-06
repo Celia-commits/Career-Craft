@@ -697,11 +697,7 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .site-footer {
-        padding: 15px 15px;
-    }
-}
+
 
 .site-footer p {
     margin: 0;
@@ -1079,7 +1075,7 @@ h2 {
     .footer-menu {
         gap: 10px;
         font-size: 0.8rem;
-        padding-right: 25px;
+        padding-right: 15px 27px;
     }
 }
 
