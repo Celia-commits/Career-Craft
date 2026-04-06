@@ -297,6 +297,7 @@ p {
 .how-it-works {
     padding: 60px 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -304,33 +305,38 @@ p {
     justify-content: space-between;
     gap: 30px;
     margin-top: 40px;
+    flex-direction: column;
     display: flex;
     position: relative;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .process-stepper {
+        flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+    }
     .process-stepper::after {
         content: '';
-        position: absolute;
+        position:absolute;
         top: 40px;
         left: 10%;
         right: 10%;
         height: 2px;
         background: rgba(140, 110, 94, 0.3);
-        z-index: -1;
-        flex-direction: column;
+        z-index: 0;
         align-items: center;
-        gap: 50px;
-        opacity: 0;
-            transition: opacity 1s ease-in;
-            transition-delay: 0.6s;
-            /* Shows after the circles appear */
-        }
-        .process-stepper:has(.step.appear)::after {
-            opacity: 1;
+        gap: 40px;
+        opacity: 1;
+        transition: none;
+        display: block;
         }
         p {
             max-width: 100%;
+        }
+
+        .how-it-works {
+            padding: 40px 0;
         }
     }
 
@@ -348,6 +354,8 @@ p {
     background-color: #8C6E5E;
     color: #f6f1e3;
     border-radius: 50%;
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
