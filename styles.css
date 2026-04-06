@@ -957,7 +957,6 @@ h2 {
 /* The actual tooltip box */
 .tooltip-trigger::after {
     content: attr(data-tooltip);
-    /* Pulls text from the HTML attribute */
     position: absolute;
     bottom: 125%;
     left: 50%;
@@ -1000,12 +999,6 @@ h2 {
     opacity: 1;
 }
 
-.next-steps{
-    
-    text-align: center;
-    margin-top: 50px;
-    
-}
 
 @media (max-width: 768px) {
     .footer-menu {
