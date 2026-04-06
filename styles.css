@@ -14,7 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     margin: 0 auto;
-    padding: 100px 15px 100px 15px;
+    padding: 100px 15px 20px 15px;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -558,11 +558,20 @@ p {
 
 .button-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     margin-top: 30px;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .button-group {
+        flex-direction: row;
+        /* Side-by-side on desktop only */
+        justify-content: center;
+        gap: 30px;
+    }
 }
 
 .hero,
@@ -610,15 +619,15 @@ p {
 
 .site-footer {
     border-top: 1px solid rgba(142, 110, 94, 0.2);
-    margin-top: 50px;
+    margin-top: 0;
     text-align: center;
-    position: fixed;
+    position: relative;
     color: white;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #f6f1e3;
-    z-index: 2000;
+    z-index: 10;
     padding: 40px 20px;
     transition: transform 0.3s ease;
 }
