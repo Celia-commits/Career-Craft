@@ -674,7 +674,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-menu li a:hover {
