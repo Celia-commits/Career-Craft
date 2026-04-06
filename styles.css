@@ -667,15 +667,6 @@ h2 {
     margin: 5px 0;
 }
 
-.footer-menu li a {
-    text-decoration: none;
-    color: #3D2B1F;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.3s;
-    font-size: 1rem;
-}
 
 .footer-menu li a:hover {
     color: #8C6E5E;
@@ -707,7 +698,6 @@ h2 {
     font-size: 0.9rem;
     color: #7a6a5f;
     border-top: 1px solid #ede7d5;
-    /* Optional: adds a subtle line above the copyright */
     padding-top: 20px;
 }
 
@@ -715,6 +705,10 @@ h2 {
     color: #3D2B1F;
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1rem;
 }
 
 /* --- Process Section Styling --- */
