@@ -111,7 +111,13 @@ h2 {
     background-color: #5a4a3f;
 }
 
-
+@media (max-width: 768px) {
+    .nav-links {
+        font-size: 0.8rem;
+            gap: 20px;
+            padding: 5px;
+    }
+}
 
 
 @media (max-width: 400px) {
