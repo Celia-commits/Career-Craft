@@ -559,17 +559,11 @@ h2 {
 }
 
 /* --- Toolkit Footer Specific Adjustment --- */
-.toolkit-footer .btn-primary {
+.toolkit-footer{
     padding: 16px 45px;
     font-size: 1.1rem;
 }
 
-@media (max-width: 768px) {
-    .toolkit-footer > .btn-primary {
-        padding: 14px 35px;
-        font-size: 1rem;
-    }
-}
 
 /* --- Tagline and Get-in-touch button section --- */
 
