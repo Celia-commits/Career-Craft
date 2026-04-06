@@ -121,7 +121,6 @@ h2 {
 @media (max-width: 400px) {
     #main-title {
         font-size: 1.3rem;
-        padding: 20px 0;
     }
 
     h1 {
@@ -597,6 +596,13 @@ h2 {
     background-color: #8C6E5E;
         transform: translateY(-3px);
         box-shadow: 0 6px 20px rgba(140, 110, 94, 0.3);
+}
+
+@media (max-width: 768px) {
+    .main-cta-button {
+        padding: 15px 39px;
+        font-size: 0.8rem;
+    }
 }
 
 /* Pulsing animation */
