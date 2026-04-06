@@ -79,7 +79,8 @@ h2 {
     list-style: none;
     margin: 0;
     flex-wrap: wrap;
-        justify-content: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .nav-links a {
