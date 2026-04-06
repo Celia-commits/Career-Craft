@@ -667,6 +667,16 @@ h2 {
     margin: 5px 0;
 }
 
+.footer-menu li a {
+    color: #3D2B1F;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
 
 .footer-menu li a:hover {
     color: #8C6E5E;
@@ -701,15 +711,6 @@ h2 {
     padding-top: 20px;
 }
 
-.site-footer a {
-    color: #3D2B1F;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 0.9rem;
-}
 
 /* --- Process Section Styling --- */
 .process-section {
