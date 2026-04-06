@@ -1091,3 +1091,9 @@ h2 {
     /* Optional: makes the form area pop against the page background */
     border-radius: 15px;
 }
+
+@media (max-width: 768px) {
+    .payment-info {
+        padding: 10px;
+    }
+}
