@@ -555,6 +555,14 @@ h2 {
     transform: translateY(-3px);
 }
 
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
 /* --- Toolkit Footer Specific Adjustment --- */
 .toolkit-footer .btn-primary {
     padding: 16px 45px;
