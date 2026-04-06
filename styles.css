@@ -67,10 +67,9 @@ h2 {
         /* Slightly smaller but still much larger than before */
     }
 .nav-container {
-    padding: 10px 15px;
+    padding: 1px 15px;
     flex-direction: column;
-    /* Keeps your current stacked layout for mobile */
-    gap: 12px;
+    gap: 1px;
 }
 }
 
@@ -78,9 +77,7 @@ h2 {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
     margin: 0;
-    padding: 0;
     flex-wrap: wrap;
         justify-content: center;
 }
