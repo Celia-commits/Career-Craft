@@ -131,13 +131,9 @@ h2 {
         font-size: 1.4rem;
     }
 
-    .btn-primary,
-    .btn-secondary,
-    .submit-btn {
+    .btn-secondary{
         padding: 12px 20px;
-        /* Smaller buttons */
         width: 100%;
-        /* Make buttons full-width for easier tapping */
         box-sizing: border-box;
     }
 }
@@ -517,7 +513,6 @@ h2 {
 /* --- Global Button Base Styles --- */
 .btn-primary,
 .btn-secondary,
-.submit-btn,
 .price-btn {
     display: inline-block;
     border-radius: 50px;
@@ -530,17 +525,15 @@ h2 {
     text-align: center;
 }
 
-/* --- Primary Button (Get in Touch / Submit) --- */
+
 /* Use this for your main goal: getting the user to contact you */
-.btn-primary,
-.submit-btn {
+.btn-primary {
     background-color: #3D2B1F;
     color: #f6f1e3;
     box-shadow: 0 4px 15px rgba(61, 43, 31, 0.2);
 }
 
-.btn-primary:hover,
-.submit-btn:hover {
+.btn-primary:hover {
     background-color: #8C6E5E;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(140, 110, 94, 0.3);
@@ -563,7 +556,6 @@ h2 {
 /* --- Toolkit Footer Specific Adjustment --- */
 .toolkit-footer .btn-primary {
     padding: 16px 45px;
-    /* Slightly larger for emphasis */
     font-size: 1.1rem;
 }
 
@@ -994,24 +986,7 @@ h2 {
     border-color: #3D2B1F;
 }
 
-/* Submit Button */
-.submit-btn {
-    width: 100%;
-    background-color: #3D2B1F;
-    color: #f6f1e3;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-}
 
-.submit-btn:hover {
-    background-color: #5a4a3f;
-    transform: translateY(-3px);
-}
 
 /* Tooltip Container Styling */
 .tooltip-trigger {
