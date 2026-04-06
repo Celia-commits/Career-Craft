@@ -299,29 +299,40 @@ p {
     text-align: center;
 }
 
+
 .process-stepper {
-    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 30px;
     margin-top: 40px;
+    display: flex;
     position: relative;
 }
 
-/* The connecting line for Desktop */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .process-stepper::after {
         content: '';
         position: absolute;
         top: 40px;
-        /* Aligned with the center of the circles */
         left: 10%;
         right: 10%;
         height: 2px;
         background: rgba(140, 110, 94, 0.3);
         z-index: -1;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        opacity: 0;
+            transition: opacity 1s ease-in;
+            transition-delay: 0.6s;
+            /* Shows after the circles appear */
+        }
+        .process-stepper:has(.step.appear)::after {
+            opacity: 1;
+        }
+        p {
+            max-width: 100%;
+        }
     }
-}
 
 .process-stepper .step {
     flex: 1;
@@ -350,100 +361,6 @@ p {
     margin-bottom: 10px;
 }
 
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-    .process-stepper {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .process-stepper p {
-        max-width: 100%;
-    }
-}
-
-
-.process-stepper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    margin-top: 40px;
-    position: relative;
-}
-
-/* The connecting line for Desktop */
-@media (min-width: 768px) {
-    .process-stepper::after {
-        content: '';
-        position: absolute;
-        top: 40px;
-        /* Aligned with the center of the circles */
-        left: 10%;
-        right: 10%;
-        height: 2px;
-        background: rgba(140, 110, 94, 0.3);
-        z-index: -1;
-    }
-}
-
-.process-stepper .step {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.step-number {
-    width: 80px;
-    height: 80px;
-    background-color: #8C6E5E;
-    color: #f6f1e3;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    font-family: 'DM Serif Display', serif;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.process-stepper h3 {
-    margin-bottom: 10px;
-}
-
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-    .process-stepper {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .process-stepper p {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 769px) {
-    .process-stepper::after {
-        /* ... your existing styles ... */
-        opacity: 0;
-        transition: opacity 1s ease-in;
-        transition-delay: 0.6s;
-        /* Shows after the circles appear */
-    }
-
-    /* Reveal the line when the first step is active */
-    .process-stepper:has(.step.appear)::after {
-        opacity: 1;
-    }
-}
 
 
 /** --- Career Toolkit Section --- */
@@ -532,6 +449,7 @@ p {
     background-color: #8C6E5E;
     color: #f6f1e3;
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(140, 110, 94, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -546,13 +464,15 @@ p {
     .btn-secondary:hover,
     .price-btn:hover {
         transform: translateY(-2px);
+        color: #f6f1e3;
         background-color: #8C6E5E;
+        box-shadow: 0 6px 20px rgba(140, 110, 94, 0.3);
     }
 }
 
 /* --- Toolkit Footer Specific Adjustment --- */
 .toolkit-footer{
-    padding: 16px 45px;
+    padding: 15px 20px;
     font-size: 1.1rem;
 }
 
@@ -562,12 +482,13 @@ p {
     text-align: center;
     padding: 40px 20px;
 }
+/* --- Main CTA Button (Hero & Closer) --- */
 
 .main-cta-button {
     display: inline-block;
     background-color: #3D2B1F;
     color: #f6f1e3;
-    padding: 18px 45px;
+    padding: 15px 20px;
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -577,6 +498,7 @@ p {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 10px 20px rgba(61, 43, 31, 0.15);
     cursor: pointer;
+    animation: cta-pulse 1s infinite;
 }
 
 .main-cta-button:hover {
@@ -607,16 +529,12 @@ p {
     }
 }
 
-.main-cta-button {
-    animation: cta-pulse 1s infinite;
-}
 
-/* --- Centering Button Groups (Hero & Closer) --- */
 
 .home-closer {
-    padding: 60px 20px; /* Adds space inside the section */
+    padding: 60px 20px; 
     text-align: center;
-    background-color: #f6f1e3; /* Ensures it matches your brand cream */
+    background-color: #f6f1e3;
 }
 
 .button-group {
@@ -707,11 +625,9 @@ p {
     }
 }
 
-/* --- Process Section Styling --- */
 .process-section {
     padding: 80px 20px;
     background-color: #fcfaf5;
-    /* Slightly lighter than your body for contrast */
 }
 
 .process-grid {
