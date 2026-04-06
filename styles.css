@@ -711,7 +711,11 @@ h2 {
     padding-top: 20px;
 }
 
-
+@media (max-width: 400px) {
+    .site-footer p {
+        font-size: 0.8rem;
+    }
+}
 
 /* --- Process Section Styling --- */
 .process-section {
