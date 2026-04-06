@@ -520,12 +520,10 @@ h2 {
 .submit-btn,
 .price-btn {
     display: inline-block;
-    padding: 14px 32px;
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid transparent;
