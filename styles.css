@@ -81,12 +81,14 @@ h2 {
     gap: 30px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+        justify-content: center;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #3D2B1F;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     transition: color 0.3s;
     text-transform: uppercase;
@@ -107,13 +109,6 @@ h2 {
 
 .nav-cta:hover {
     background-color: #5a4a3f;
-}
-
-
-.nav-links {
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 
