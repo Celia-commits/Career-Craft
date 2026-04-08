@@ -865,56 +865,23 @@ p {
 
 
 
-/* Tooltip Container Styling */
-.tooltip-trigger {
-    border-bottom: 2px dotted #3D2B1F;
-    /* Visual cue that it's interactive */
-    cursor: help;
-    position: relative;
-    font-weight: 600;
-}
-
-/* The actual tooltip box */
-.tooltip-trigger::after {
-    content: attr(data-tooltip);
+.tooltip-trigger .tooltip-image {
+    visibility: hidden;
+    width: 300px;
+    /* Adjust size of the popup mockup */
+    background-color: #3D2B1F;
+    border: 2px solid #7a6a5f;
     position: absolute;
+    z-index: 1000;
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #3D2B1F;
-    color: #f6f1e3;
-    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
     border-radius: 8px;
-    font-size: 0.85rem;
-    width: 200px;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 1000;
 }
 
-/* Show tooltip on hover */
-.tooltip-trigger:hover::after {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* Small arrow at the bottom of tooltip */
-.tooltip-trigger::before {
-    content: "";
-    position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 8px solid transparent;
-    border-top-color: #3D2B1F;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip-trigger:hover::before {
+.tooltip-trigger:hover .tooltip-image {
     visibility: visible;
     opacity: 1;
 }
