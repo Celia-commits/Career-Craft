@@ -865,25 +865,74 @@ p {
 
 
 
+/* --- Final Tooltip & Image Popup Fix --- */
+.tooltip-trigger {
+    cursor: help;
+    position: relative;
+    font-weight: 600;
+    color: #3D2B1F;
+    border-bottom: 2px dotted #7a6a5f;
+}
+
+/* Hide the image by default */
 .tooltip-trigger .tooltip-image {
     visibility: hidden;
-    width: 300px;
-    /* Adjust size of the popup mockup */
+    opacity: 0;
+    width: 320px;
+    /* Large enough to see the LinkedIn details */
+    height: auto;
     background-color: #3D2B1F;
     border: 2px solid #7a6a5f;
     position: absolute;
     z-index: 1000;
-    bottom: 125%;
+    bottom: 150%;
+    /* Position it well above the text */
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 8px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    /* Prevents the image from flickering on hover */
 }
 
+/* Show the image and slide it up slightly on hover */
 .tooltip-trigger:hover .tooltip-image {
     visibility: visible;
     opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* Optional: Add a small arrow pointing down to the text */
+.tooltip-trigger:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top-color: #3D2B1F;
+    z-index: 1001;
+}
+
+/* Specifically widen portrait-style mockups */
+.tooltip-trigger:hover img[alt*="CV"],
+.tooltip-trigger:hover img[alt*="Cover"]
+.tooltip-trigger:hover img[alt*="Guide"]{
+    width: 350px;
+    /* Wider to make the portrait document readable */
+    max-height: 450px;
+    /* Prevents it from being too tall for the screen */
+    transform: translateX(-50%) translateY(-20px);
+    /* Lifts it slightly higher */
+}
+
+.tooltip-trigger:hover img[alt*="LinkedIn"] {
+    width: 350px;
+    /* Standard width for LinkedIn mockup */
+    max-height: 400px;
+    /* Prevents it from being too tall */
+    transform: translateX(-50%) translateY(-20px);
 }
 
 
