@@ -917,7 +917,7 @@ p {
 
 /* Specifically widen portrait-style mockups */
 .tooltip-trigger:hover img[alt*="CV"],
-.tooltip-trigger:hover img[alt*="Cover"]
+.tooltip-trigger:hover img[alt*="Cover"],
 .tooltip-trigger:hover img[alt*="Guide"]{
     width: 350px;
     /* Wider to make the portrait document readable */
