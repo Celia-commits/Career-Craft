@@ -985,3 +985,10 @@ p {
     text-align: center;
 }
 
+.inquiry-form-container {
+    max-width: 600px;
+    /* Limits the width so it doesn't stretch across the whole screen */
+    margin: 0 auto;
+    /* Centers it */
+}
+
