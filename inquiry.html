@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us | Career Craft</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png (2).png" alt="Career Craft Logo" class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="inquiry.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="nav-cta">Secure Your New CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="main-title">
+        <h1>Contact Us</h1>
+    </header>
+
+    <section class="contact-hero">
+        <h2>Have a Question?</h2>
+        <p>Drop us a message and we'll get back to you within 24 hours.</p>
+    </section>
+
+    <section class="contact-form-container" style="max-width: 600px; margin: 0 auto; padding: 40px 20px;">
+        <form action="https://formspree.io/f/your-id" method="POST" class="inquiry-form">
+            <div style="margin-bottom: 15px;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-top: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required
+                    style="width: 100%; padding: 10px; margin-top: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                    style="width: 100%; padding: 10px; margin-top: 5px;"></textarea>
+            </div>
+            <button type="submit" class="nav-cta" style="border: none; cursor: pointer; width: 100%;">Send
+                Message</button>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Career Craft. Strategic CV Branding in South Africa.</p>
+    </footer>
+</body>
+
+</html>
