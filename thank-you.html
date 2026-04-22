@@ -4,24 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/favicon.ico.svg" type="image/x-icon">
+    <meta name="description"
+        content="Thank you for contacting Career Craft. We’ve received your inquiry and will reply within 24 hours. Check your inbox and spam folder.">
+
     <title>Application Received | Career Craft</title>
+    <link rel="shortcut icon" href="images/favicon.ico.svg" type="image/x-icon">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Thank You | Career Craft">
+    <meta property="og:description" content="We’ve received your message. Expect a reply within 24 hours.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://career-craft-ruby-six.vercel.app/images/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://career-craft-ruby-six.vercel.app/thank-you.html">
+    <meta property="og:site_name" content="Career Craft">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background-color: #f6f1e3; display: flex; flex-direction: column; min-height: 100vh;">
+<body class="thank-you-body">
     <nav class="top-nav">
         <div class="nav-container">
             <a href="index.html" class="logo-link">
-                <img src="images/logo.png.png" alt="Career Craft Logo" class="nav-logo">
+                <img src="images/logo.png (2).png" alt="Career Craft Logo" class="nav-logo">
             </a>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="agencies.html">For Agencies</a></li>
+                <li><a href="agency.html">For Recruiters</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="inquiry.html">Inquiry</a></li>
@@ -30,24 +48,24 @@
         </div>
     </nav>
 
-    <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px 20px;">
-        <section class="thank-you-card"
-            style="background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(61, 43, 31, 0.1); max-width: 600px; text-align: center;">
+    <main class="thank-you-main">
+        <section class="thank-you-card">
+            <div class="success-icon">✨</div>
 
-            <div class="success-icon" style="font-size: 50px; margin-bottom: 20px;">✨</div>
+            <h1 id="thank-you-heading">We've Got It!</h1>
 
-            <h1 style="font-family: 'DM Serif Display', serif; color: #3D2B1F; margin-bottom: 20px;">We've Got It!</h1>
-
-            <p style="font-family: 'Poppins', sans-serif; color: #7a6a5f; line-height: 1.6; margin-bottom: 30px;">
-                Thank you for contacting us, we'll be in touch soon! Don't forget to check your inbox (and spam folder)
-                for our email. We look forward to helping you craft a CV that opens doors to your dream career.
+            <p id="thank-you-message">
+                Thank you for contacting us. We’ll be in touch within 24 hours. Check your inbox and spam folder for our
+                email.
             </p>
 
             <div class="next-steps">
-                <div class="button-group" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="index.html" class="btn-primary"
-                        style="text-decoration: none; padding: 12px 25px; border-radius: 50px; background-color: #3D2B1F; color: #f6f1e3;">
+                <div class="button-group">
+                    <a href="index.html" class="btn-primary">
                         Return Home
+                    </a>
+                    <a id="secondary-cta" href="faq.html" class="btn-secondary">
+                        Browse FAQs
                     </a>
                 </div>
             </div>
@@ -57,17 +75,19 @@
     <footer class="site-footer">
         <nav class="footer-nav">
             <ul class="footer-menu">
-                <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-                <li><a href="about.html" rel="noopener noreferrer">About</a></li>
-                <li><a href="agencies.html" rel="noopener noreferrer">For Agencies</a></li>
-                <li><a href="pricing.html" rel="noopener noreferrer">Pricing</a></li>
-                <li><a href="faq.html" rel="noopener noreferrer">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="agency.html">For Recruiters</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="inquiry.html">Inquiry</a></li>
                 <li><a href="contact.html">Get Started</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 Career Craft. Strategic CV Branding in South Africa.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

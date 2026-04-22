@@ -4,22 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Contact Career Craft for CV writing, LinkedIn revamps, or agency support. Job seekers and recruitment agencies welcome. 24hr response time.">
 
     <title>Inquiry | Career Craft</title>
     <link rel="shortcut icon" href="images/favicon.ico.svg" type="image/x-icon">
-    <meta property="og:title" content="Inquiry Page | Career Craft">
-    <meta property="og:description" content="Professional CV Writing Service">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Contact Career Craft | CV & Agency Support">
+    <meta property="og:description"
+        content="Questions about CV writing or agency services? Send us a message. We reply within 24 hours.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/social-preview.png">
+    <meta property="og:image" content="https://career-craft-ruby-six.vercel.app/images/social-preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://career-craft-ruby-six.vercel.app/">
-    <meta property="og:sitename" content="Career Craft">
+    <meta property="og:url" content="https://career-craft-ruby-six.vercel.app/inquiry.html">
+    <meta property="og:site_name" content="Career Craft">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -31,7 +39,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="agencies.html">For Agencies</a></li>
+                <li><a href="agency.html">For Recruiters</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="inquiry.html">Inquiry</a></li>
@@ -41,38 +49,40 @@
     </nav>
 
     <header id="main-title">
-        <h1>Inquiry</h1>
+        <h1 id="page-heading">Inquiry</h1>
     </header>
 
     <section class="contact-hero">
-        <h2>Have a Question?</h2>
-        <p>Drop us a message and we'll get back to you within 24 hours.</p>
+        <h2 id="hero-heading">Have a Question?</h2>
+        <p id="hero-subtext">Drop us a message and we'll get back to you within 24 hours.</p>
     </section>
 
-
-    <section class="inquiry-form-container"
-        style="max-width: 800px; margin: 0 auto; padding: 20px; border: 1px solid #ccc;">
-        <iframe data-tally-src="https://tally.so/r/ja7QD4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
+    <section class="inquiry-form-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <iframe id="tally-form"
+            data-tally-src="https://tally.so/r/ja7QD4?hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0"
-            title="Have a Question?" style="min-height: 500px;"></iframe>
+            title="Contact Form" style="min-height: 500px; border: 1px solid #ccc; border-radius: 8px;">
+        </iframe>
     </section>
-
-    <script async src="https://tally.so/widgets/embed.js"></script>
 
     <footer class="site-footer">
         <nav class="bottom-nav">
             <ul class="footer-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html" rel="noopener noreferrer">About</a></li>
-                <li><a href="agencies.html" rel="noopener noreferrer">For Agencies</a></li>
-                <li><a href="pricing.html" rel="noopener noreferrer">Pricing</a></li>
-                <li><a href="faq.html" rel="noopener noreferrer">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="agency.html">For Recruiters</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="inquiry.html">Inquiry</a></li>
                 <li><a href="contact.html">Get Started</a></li>
             </ul>
         </nav>
         <p>&copy; 2026 Career Craft. Strategic CV Branding in South Africa.</p>
     </footer>
+
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
